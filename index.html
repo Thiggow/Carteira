@@ -1,16 +1,41 @@
-<header>
-	<h1>Carteira de Valores Monetários</h1>
-    <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
-    <script src="carteira.js"></script>
-	<nav>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+	<div class="navbar">
 		<ul>
-			<li><a href="navigation/home.html">Home</a></li>
-			<li><a href="navigation/cadastro.html">Cadastro</a></li>
-			<li><a href="navigation/deposito.html">Depósito</a></li>
-			<li><a href="navigation/saque.html">Saque</a></li>
-			<li><a href="navigation/transferencia.html">Transferência</a></li>
+			<li><a href="#home">Home</a></li>
+			<li><a href="#cadastro">Cadastro</a></li>
+			<li><a href="#deposito">Deposito</a></li>
+			<li><a href="#saque">Saque</a></li>
+			<li><a href="#transferencia">Transferência</a></li>
 		</ul>
-	</nav>
-</header>
+	</div>
+	<div class="section home" id="home">
+		<h1>Carteira</h1>
+		<p>Conteúdo da seção Home.</p>
+    <button id="carteiras" onclick="carteiraSaldo()">Clique aqui</button>
+    <div id="mensagem"></div>
+	</div>
+	<div class="section cadastro" id="cadastro">
+		<h1>Cadastrar Nova Carteira</h1>
+		<p>Conteúdo da seção Cadastro.</p>
+	</div>
+	<div class="section deposito" id="deposito">
+		<h1>Depositar</h1>
+		<p>Conteúdo da seção Depósito.</p>
+	</div>
+	<div class="section saque" id="saque">
+		<h1>Sacar</h1>
+		<p>Conteúdo da seção Saque.</p>
+	</div>
+	<div class="section transferencia" id="transferencia">
+		<h1>Transferir</h1>
+		<p>Conteúdo da seção Transferência.</p>
+	</div>
+</body>
+</html>
