@@ -3,7 +3,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
 	<div class="navbar">
@@ -15,24 +15,37 @@
 			<li><a href="#transferencia">Transferência</a></li>
 		</ul>
 	</div>
+
 	<div class="section home" id="home">
 		<h1>Carteira</h1>
 		<p>Conteúdo da seção Home.</p>
-    <button id="carteiras" onclick="carteiraSaldo()">Clique aqui</button>
-    <div id="mensagem"></div>
+    <button id="carteiras" onclick="carteiraSaldo()">Carteiras e Saldos</button>
+    <button id="carteiras" onclick="myFunction()">Data e Hora</button>
+    <button id="carteiras" onclick="myFunction2()">Tarifa</button>
 	</div>
+
 	<div class="section cadastro" id="cadastro">
 		<h1>Cadastrar Nova Carteira</h1>
 		<p>Conteúdo da seção Cadastro.</p>
+    <form action="">
+      <input type="text" name="num" id="num" placeholder="Número da conta:">
+      <input type="text" name="nome" id="nome" placeholder="Digite seu nome:">
+      <input type="text" name="cpf" id="cpf" placeholder="Digite seu cpf:">
+      <input type="text" name="dep" id="dep" placeholder="Depósito inicial:">
+      <input type="submit" id="send" value="Cadastrar">
+    </form>
 	</div>
+
 	<div class="section deposito" id="deposito">
 		<h1>Depositar</h1>
 		<p>Conteúdo da seção Depósito.</p>
 	</div>
+
 	<div class="section saque" id="saque">
 		<h1>Sacar</h1>
 		<p>Conteúdo da seção Saque.</p>
 	</div>
+
 	<div class="section transferencia" id="transferencia">
 		<h1>Transferir</h1>
 		<p>Conteúdo da seção Transferência.</p>
